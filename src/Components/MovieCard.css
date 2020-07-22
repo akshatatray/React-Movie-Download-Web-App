@@ -52,7 +52,7 @@
 .year {
      position: absolute;
      left: 175px;
-     bottom: 15px;
+     bottom: 30px;
      font-size: 12px;
      letter-spacing: 2px;
      color: white;
@@ -107,8 +107,5 @@ svg {
      .container {
           width: 95%;
           margin-bottom: 5px;
-     }
-     .year {
-          bottom: 30px;
      }
 }

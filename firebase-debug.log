@@ -1,0 +1,144 @@
+[debug] [2020-07-22T13:00:28.254Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T13:00:28.257Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AKSHAT ATRAY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-07-22T13:00:28.257Z] CLI Version:   8.4.3
+[debug] [2020-07-22T13:00:28.257Z] Platform:      win32
+[debug] [2020-07-22T13:00:28.257Z] Node Version:  v12.16.3
+[debug] [2020-07-22T13:00:28.258Z] Time:          Wed Jul 22 2020 18:30:28 GMT+0530 (India Standard Time)
+[debug] [2020-07-22T13:00:28.259Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T13:00:28.259Z] 
+[debug] [2020-07-22T13:00:28.269Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-22T13:00:28.270Z] > authorizing via signed-in user
+[debug] [2020-07-22T13:00:28.270Z] [iam] checking project theme-3cdf1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-22T13:00:28.274Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/theme-3cdf1:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-22T13:00:49.807Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 172.217.166.234:443
+[debug] [2020-07-22T13:00:49.808Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/theme-3cdf1  
+ 
+[debug] [2020-07-22T13:01:10.837Z] Server Error. connect ETIMEDOUT 216.58.200.170:443
+[debug] [2020-07-22T13:01:31.848Z] FirebaseError: Server Error. connect ETIMEDOUT 216.58.200.170:443
+    at Request._callback (C:\Users\AKSHAT ATRAY\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\AKSHAT ATRAY\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:310:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (C:\Users\AKSHAT ATRAY\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:322:22)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:310:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project theme-3cdf1. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-07-22T13:01:50.543Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T13:01:50.546Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AKSHAT ATRAY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-07-22T13:01:50.546Z] CLI Version:   8.4.3
+[debug] [2020-07-22T13:01:50.546Z] Platform:      win32
+[debug] [2020-07-22T13:01:50.546Z] Node Version:  v12.16.3
+[debug] [2020-07-22T13:01:50.548Z] Time:          Wed Jul 22 2020 18:31:50 GMT+0530 (India Standard Time)
+[debug] [2020-07-22T13:01:50.548Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T13:01:50.548Z] 
+[debug] [2020-07-22T13:01:50.559Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-22T13:01:50.560Z] > authorizing via signed-in user
+[debug] [2020-07-22T13:01:50.560Z] [iam] checking project theme-3cdf1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-22T13:01:50.564Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/theme-3cdf1:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-22T13:02:11.611Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 172.217.166.234:443
+[debug] [2020-07-22T13:02:11.613Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/theme-3cdf1  
+ 
+[debug] [2020-07-22T13:02:13.711Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 13:02:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'theme-3cdf1'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-07-22T13:02:13.735Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/theme-3cdf1/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-07-22T13:02:57.743Z] Error: connect ETIMEDOUT 172.217.161.10:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.161.10:443
+[debug] [2020-07-22T13:04:32.801Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T13:04:32.804Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\AKSHAT ATRAY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-07-22T13:04:32.805Z] CLI Version:   8.4.3
+[debug] [2020-07-22T13:04:32.805Z] Platform:      win32
+[debug] [2020-07-22T13:04:32.805Z] Node Version:  v12.16.3
+[debug] [2020-07-22T13:04:32.806Z] Time:          Wed Jul 22 2020 18:34:32 GMT+0530 (India Standard Time)
+[debug] [2020-07-22T13:04:32.806Z] ----------------------------------------------------------------------
+[debug] [2020-07-22T13:04:32.807Z] 
+[debug] [2020-07-22T13:04:32.821Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-22T13:04:32.822Z] > authorizing via signed-in user
+[debug] [2020-07-22T13:04:32.822Z] [iam] checking project theme-3cdf1 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-22T13:04:32.826Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/theme-3cdf1:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-22T13:04:53.879Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. connect ETIMEDOUT 172.217.166.234:443
+[debug] [2020-07-22T13:04:53.880Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/theme-3cdf1  
+ 
+[debug] [2020-07-22T13:04:54.915Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 13:04:53 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'theme-3cdf1'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-07-22T13:04:54.932Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/theme-3cdf1/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-07-22T13:04:57.281Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 13:04:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[theme-3cdf1]: beginning deploy... 
+[info] i  hosting[theme-3cdf1]: found 18 files in build 
+[debug] [2020-07-22T13:04:57.324Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2020-07-22T13:04:57.629Z] [hosting] hash cache [YnVpbGQ] stored for 18 files
+[debug] [2020-07-22T13:04:57.630Z] [hosting][hash queue][FINAL] {"max":169,"min":26,"avg":41.166666666666664,"active":0,"complete":18,"success":18,"errored":0,"retried":0,"total":18,"elapsed":305}
+[debug] [2020-07-22T13:04:57.630Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/theme-3cdf1/versions/6ce0e1cb85ec1fa2:populateFiles  
+ <request body omitted>
+[debug] [2020-07-22T13:04:59.842Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 13:04:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T13:04:59.848Z] [hosting][populate queue][FINAL] {"max":2259,"min":2259,"avg":2259,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2264}
+[debug] [2020-07-22T13:04:59.848Z] [hosting] uploads queued: 10
+[debug] [2020-07-22T13:05:21.512Z] [uploadQueue] Retrying task 19888d6e9b8ff90c5b18e169e2588ea2aa2995f9d318a7b9c0bede7a04f4c0ce
+[debug] [2020-07-22T13:05:21.514Z] [uploadQueue] Retrying task 91fc10b018d15a5512c8ad96053f130672264e59874020b9ceae89b5bf34f480
+[debug] [2020-07-22T13:05:21.515Z] [uploadQueue] Retrying task 54c4f6fe7fa4776142d1f9f4e6af15bd95c0bc7a16e33c1716ba3cdf46a0962b
+[debug] [2020-07-22T13:05:21.524Z] [uploadQueue] Retrying task 4dcf76ed046906f1c4c8d8e7f737cb4c6bcd99872fc85392ce087fa94902d553
+[debug] [2020-07-22T13:05:21.525Z] [uploadQueue] Retrying task 8b6c121401714d7b8da7a06b691fbe1d1a5b4418112faa8553a2561f692eddaf
+[debug] [2020-07-22T13:05:21.526Z] [uploadQueue] Retrying task c8fc555c6368a63900e9876781426df1c7b07095d2c9ff6f35f99e0ae10d2f2f
+[debug] [2020-07-22T13:05:21.528Z] [uploadQueue] Retrying task d104f2cfe297f0970bf611be266784029ada555af3bcee13a7dab445990f41f0
+[debug] [2020-07-22T13:05:43.352Z] [uploadQueue] Retrying task 4dcf76ed046906f1c4c8d8e7f737cb4c6bcd99872fc85392ce087fa94902d553
+[debug] [2020-07-22T13:05:43.354Z] [uploadQueue] Retrying task c8fc555c6368a63900e9876781426df1c7b07095d2c9ff6f35f99e0ae10d2f2f
+[debug] [2020-07-22T13:05:43.354Z] [uploadQueue] Retrying task d104f2cfe297f0970bf611be266784029ada555af3bcee13a7dab445990f41f0
+[debug] [2020-07-22T13:06:05.968Z] [uploadQueue] Retrying task 4dcf76ed046906f1c4c8d8e7f737cb4c6bcd99872fc85392ce087fa94902d553
+[debug] [2020-07-22T13:06:05.972Z] [uploadQueue] Retrying task d104f2cfe297f0970bf611be266784029ada555af3bcee13a7dab445990f41f0
+[debug] [2020-07-22T13:06:05.975Z] [uploadQueue] Retrying task c8fc555c6368a63900e9876781426df1c7b07095d2c9ff6f35f99e0ae10d2f2f
+[debug] [2020-07-22T13:06:10.037Z] [hosting][upload queue][FINAL] {"max":8661,"min":2335,"avg":3563.6,"active":0,"complete":10,"success":10,"errored":0,"retried":13,"total":10,"elapsed":70195}
+[info] +  hosting[theme-3cdf1]: file upload complete 
+[debug] [2020-07-22T13:06:10.039Z] [hosting] deploy completed after 72756ms
+[debug] [2020-07-22T13:06:10.619Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "theme-3cdf1"
+    },
+    "site": "theme-3cdf1",
+    "version": "sites/theme-3cdf1/versions/6ce0e1cb85ec1fa2"
+  }
+]
+[info] i  hosting[theme-3cdf1]: finalizing version... 
+[debug] [2020-07-22T13:06:10.621Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/theme-3cdf1/versions/6ce0e1cb85ec1fa2?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2020-07-22T13:06:12.884Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 22 Jul 2020 13:06:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-22T13:06:12.885Z] [hosting] finalized version for theme-3cdf1: {"name":"sites/theme-3cdf1/versions/6ce0e1cb85ec1fa2","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2020-07-22T13:04:54.951325Z","createUser":{"email":"akthd4@gmail.com"},"finalizeTime":"2020-07-22T13:06:10.772516Z","finalizeUser":{"email":"akthd4@gmail.com"}}
+[info] +  hosting[theme-3cdf1]: version finalized 
+[info] i  hosting[theme-3cdf1]: releasing new version... 
+[debug] [2020-07-22T13:06:12.887Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/theme-3cdf1/releases?version_name=sites/theme-3cdf1/versions/6ce0e1cb85ec1fa2  
+ {"message":null}
+[debug] [2020-07-22T13:06:54.898Z] Error: connect ETIMEDOUT 172.217.161.10:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1141:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.161.10:443

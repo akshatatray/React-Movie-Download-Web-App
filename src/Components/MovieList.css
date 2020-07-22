@@ -5,8 +5,56 @@
      justify-content: start;
      margin-top: 10px;
 }
+.loading {
+     position: relative;
+     height: 100px;
+     width: 100%;
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.spin {
+     position: absolute;
+     width: 150px;
+     height: 5px;
+     top: 50%;
+     left: 40%;
+     transform: translate(-50%,-50%);
+     background: #1ba94c;
+     border-radius: 10%;
+     animation: spinner 2s infinite;
+}
+
+@keyframes spinner {
+     from {
+          left: 40%;
+     }
+     50% {
+          left: 60%;
+     }
+     to {
+          left: 40%;
+     }
+}
+
 @media (max-width:450px) {
      .card-container {
           width: 100%;
+     }
+     .spin {
+          width: 75px;
+          left: 20%;
+     }
+     @keyframes spinner {
+          from {
+               left: 20%;
+          }
+          50% {
+               left: 80%;
+          }
+          to {
+               left: 20%;
+          }
      }
 }

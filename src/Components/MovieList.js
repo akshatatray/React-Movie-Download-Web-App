@@ -5,8 +5,10 @@ import "./MovieList.css";
 const MovieList = (props) => {
      if (props.loading) {
           return(
-               <div>
-                    Loading...
+               <div className="loading">
+                    <div className="spin">
+
+                    </div>
                </div>
           );
      }
