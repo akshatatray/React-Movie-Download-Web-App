@@ -4,14 +4,32 @@
 }
 .Bar {
      height: 50px;
-     width: 450px;
-     margin: 15px;
-     margin-top: 100px;
+     width: 400px;
+     margin: 15px 0px 0px 15px;
+     margin-top: 85px;
      border: none;
      border-radius: 0.35rem;
+     border-top-right-radius: 0;
+     border-bottom-right-radius: 0;
      padding: 5px 20px;
      font-size: 17px;
 }
 .Bar:focus {
      outline: 0;
+}
+.search {
+     height: 50px;
+     width: 50px;
+     margin: 15px 15px 0px 0px;
+     margin-top: 85px;
+     border: none;
+     border-radius: 0.35rem;
+     border-top-left-radius: 0;
+     border-bottom-left-radius: 0;
+     padding: 15px;
+     cursor: pointer;
+}
+.bi {
+     width: 20px;
+     height: 20px;
 }

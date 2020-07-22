@@ -3,6 +3,13 @@ import MovieCard from './MovieCard';
 import "./MovieList.css";
 
 const MovieList = (props) => {
+     if (props.loading) {
+          return(
+               <div>
+                    Loading...
+               </div>
+          );
+     }
      const films = props.movies.map((movie) => {
           return (
                <MovieCard
