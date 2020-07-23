@@ -8,17 +8,13 @@ const Navbar = () => {
           <div className="center">
                <ul className="nav">
                     <a href="/home">
-                         <li className="nav-item">
-                              <a href="/home" className="nav-link">
-                                   Home
-                              </a>
+                         <li className="nav-link nav-item">
+                              Home
                          </li>
                     </a>
                     <a href="/bollywood">
-                         <li className="nav-item">
-                              <a href="/bollywood" className="nav-link">
-                                   Bollywood
-                              </a>
+                         <li className="nav-link nav-item">
+                              Bollywood
                          </li>
                     </a>
                </ul>
