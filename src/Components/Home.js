@@ -18,12 +18,12 @@ class Home extends React.Component {
      fetchMovies = async () => {
           this.setState( { loading: true } );
           if(this.state.term === ''){
-               const res = await axios.get('https://yts.mx/api/v2/list_movies.json/items?page='+ this.state.currentPage +'&minimum_rating=8&sort_by=download_count');
+               const res = await axios.get('https://yts.mx/api/v2/list_movies.json/items?limit=10&page='+ this.state.currentPage +'&minimum_rating=8&sort_by=download_count');
                let p = (Math.ceil(res.data.data.movie_count / res.data.data.limit))
                this.setState( { movies: res.data.data.movies } );
                this.setState( { pages: p} );
           } else {
-               const res = await axios.get('https://yts.mx/api/v2/list_movies.json/items?page='+ this.state.currentPage +'&query_term='+ this.state.term +'&sort_by=download_count');
+               const res = await axios.get('https://yts.mx/api/v2/list_movies.json/items?limit=10&page='+ this.state.currentPage +'&query_term='+ this.state.term +'&sort_by=download_count');
                let p = (Math.ceil(res.data.data.movie_count / res.data.data.limit))
                this.setState( { movies: res.data.data.movies } );
                this.setState( { pages: p} );
@@ -51,14 +51,24 @@ class Home extends React.Component {
      }
 
      render() {
-          return(
-               <div>
-                    <Navbar></Navbar>
-                    <SearchBar className="SearchBar" onSubmit={this.onSearchSubmit}></SearchBar>
-                    <MovieList movies = {this.state.movies} loading = {this.state.loading} ></MovieList>
-                    <Pagination currentPage = { this.state.currentPage } pages = {this.state.pages} onClick={this.onPaginate} ></Pagination>
-               </div>
-          );
+          if( this.state.movies) {
+               return(
+                    <div>
+                         <Navbar></Navbar>
+                         <SearchBar className="SearchBar" onSubmit={this.onSearchSubmit}></SearchBar>
+                         <MovieList movies = {this.state.movies} loading = {this.state.loading} ></MovieList>
+                         <Pagination currentPage = { this.state.currentPage } pages = {this.state.pages} onClick={this.onPaginate} ></Pagination>
+                    </div>
+               );
+          } else {
+               return(
+                    <div>
+                         <Navbar></Navbar>
+                         <SearchBar className="SearchBar" onSubmit={this.onSearchSubmit}></SearchBar>
+                         <h2>No Such Movie</h2>
+                    </div>
+               );
+          }
      }
 }
 

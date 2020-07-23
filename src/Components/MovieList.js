@@ -7,7 +7,6 @@ const MovieList = (props) => {
           return(
                <div className="loading">
                     <div className="spin">
-
                     </div>
                </div>
           );
