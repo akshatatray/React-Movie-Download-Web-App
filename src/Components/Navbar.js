@@ -17,11 +17,6 @@ const Navbar = () => {
                               Bollywood
                          </a>
                     </li>
-                    <li className="nav-item">
-                         <a href="/hollywood" className="nav-link">
-                              Hollywood
-                         </a>
-                    </li>
                </ul>
           </div>
      </nav>

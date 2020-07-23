@@ -36,16 +36,30 @@ const Pagination = (props) => {
 
      const pageNumber = paginate(props.currentPage, props.pages);
 
+     const pages = pageNumber.map((num) => {
+          if (num !== "...") {
+               return (
+                    <li className="page-item" key={num}>
+                         <button onClick={() => props.onClick(num)} className="page-link">
+                              {num}
+                         </button>
+                    </li>
+               );
+          } else {
+               return (
+                    <li className="page-item" key={num}>
+                         <button className="page-link-dots">
+                              {num}
+                         </button>
+                    </li>
+               );
+          }
+     })
+
      return(
           <nav className="pagenav">
                <ul className="pagination">
-                    { pageNumber.map(num => (
-                         <li className="page-item" key={num}>
-                              <button onClick={() => {props.onClick(num)}} className="page-link">
-                                   {num}
-                              </button>
-                         </li>
-                    )) }
+                    { pages }
                </ul>
           </nav>
      );
