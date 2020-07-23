@@ -1,0 +1,9 @@
+.error {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     color: #1ba94c;
+     font-family: 'Montserrat', sans-serif;
+     letter-spacing: 2px;
+     transform: translate(-50%, -50%);
+}

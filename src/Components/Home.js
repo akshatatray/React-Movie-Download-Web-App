@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './Home.css';
 import Navbar from './Navbar';
 import SearchBar from './SearchBar';
 import MovieList from "./MovieList";
@@ -61,7 +62,7 @@ class Home extends React.Component {
                     <div>
                          <Navbar></Navbar>
                          <SearchBar className="SearchBar" onSubmit={this.onSearchSubmit}></SearchBar>
-                         <h2>No Such Movie</h2>
+                         <h2 className="error">No Such Movie.</h2>
                     </div>
                );
           }
