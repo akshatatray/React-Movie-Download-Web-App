@@ -7,16 +7,18 @@
 }
 .loading {
      position: relative;
-     height: 100px;
-     width: 100%;
+     margin: 100px auto;
+     height: 5px;
+     width: 430px;
      text-align: center;
+     background: var(--bg1);
      display: flex;
      flex-direction: column;
      justify-content: center;
 }
 .spin {
      position: absolute;
-     width: 150px;
+     width: 90px;
      height: 5px;
      top: 50%;
      left: 40%;
@@ -28,13 +30,13 @@
 
 @keyframes spinner {
      from {
-          left: 40%;
+          left: 10%;
      }
      50% {
-          left: 60%;
+          left: 90%;
      }
      to {
-          left: 40%;
+          left: 10%;
      }
 }
 
@@ -42,19 +44,10 @@
      .card-container {
           width: 100%;
      }
-     .spin {
-          width: 75px;
-          left: 20%;
+     .loading {
+          width: 90%;
      }
-     @keyframes spinner {
-          from {
-               left: 20%;
-          }
-          50% {
-               left: 80%;
-          }
-          to {
-               left: 20%;
-          }
+     .spin {
+          width: 50px;
      }
 }

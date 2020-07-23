@@ -21,7 +21,6 @@ class Bollywood extends React.Component {
                headers: {"secret-key": "$2b$10$4h8tpZJ9aKAxqWTrz.VgHePRr6Dl7gIzsGJb/aCJ.tK8p9gHNocku"}
           });
           this.setState( { movies: res.data.data.movies } );
-          console.log(res.data.data.movies);
           this.setState( { loading: false } );
      }
 
@@ -29,7 +28,6 @@ class Bollywood extends React.Component {
           await this.setState({movies: []});
           await this.setState({term: term});
           this.fetchMovies();
-          console.log(this.state);
      }
 
      componentDidMount() {
@@ -39,8 +37,6 @@ class Bollywood extends React.Component {
      onPaginate = async (num) => {
           await this.setState( { currentPage: num } );
           this.fetchMovies();
-          console.log(this.state);
-          console.log(num);
      }
 
      render() {

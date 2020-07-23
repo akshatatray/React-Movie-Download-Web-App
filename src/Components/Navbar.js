@@ -7,16 +7,20 @@ const Navbar = () => {
          <nav id="navbar" className="navbar">
           <div className="center">
                <ul className="nav">
-                    <li className="nav-item">
-                         <a href="/home" className="nav-link">
-                              Home
-                         </a>
-                    </li>
-                    <li className="nav-item">
-                         <a href="/bollywood" className="nav-link">
-                              Bollywood
-                         </a>
-                    </li>
+                    <a href="/home">
+                         <li className="nav-item">
+                              <a href="/home" className="nav-link">
+                                   Home
+                              </a>
+                         </li>
+                    </a>
+                    <a href="/bollywood">
+                         <li className="nav-item">
+                              <a href="/bollywood" className="nav-link">
+                                   Bollywood
+                              </a>
+                         </li>
+                    </a>
                </ul>
           </div>
      </nav>

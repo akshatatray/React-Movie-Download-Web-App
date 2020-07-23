@@ -28,7 +28,6 @@ class Home extends React.Component {
                this.setState( { movies: res.data.data.movies } );
                this.setState( { pages: p} );
           }
-          console.log(this.state);
           this.setState( { loading: false } );
      }
 
@@ -36,7 +35,6 @@ class Home extends React.Component {
           await this.setState({movies: []});
           await this.setState({term: term});
           this.fetchMovies();
-          console.log(this.state);
      }
 
      componentDidMount() {
@@ -46,8 +44,6 @@ class Home extends React.Component {
      onPaginate = async (num) => {
           await this.setState( { currentPage: num } );
           this.fetchMovies();
-          console.log(this.state);
-          console.log(num);
      }
 
      render() {
